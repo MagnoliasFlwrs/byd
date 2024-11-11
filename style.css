@@ -451,7 +451,7 @@ body {
   }
 }
 .contacts-block .content .info-block {
-  width: 33.3333333333%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -489,7 +489,7 @@ body {
   font-weight: 600;
 }
 .contacts-block .content .map {
-  width: 66.6666666667%;
+  width: 50%;
   height: 500px;
 }
 @media (max-width: 1024px) {

@@ -434,7 +434,7 @@ body {
       gap: 30px;
     }
     .info-block {
-      width: calc(100% / 3);
+      width: calc(100% / 2);
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -470,7 +470,7 @@ body {
       }
     }
     .map {
-      width: calc(100% / 3 * 2);
+      width: calc(100% /  2);
       height: 500px;
       @media (max-width: 1024px) {
         width: 100%;

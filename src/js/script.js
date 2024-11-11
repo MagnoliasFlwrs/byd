@@ -19,9 +19,9 @@ if (heroSwiper) {
     const swiper = new Swiper(heroSwiper, {
         slidesPerView: 1,
         loop: true,
-        // autoplay: {
-        //     delay: 2500,
-        // },
+        autoplay: {
+            delay: 2500,
+        },
         pagination: {
             el: '.hero-swiper-pagination',
             clickable: true,
