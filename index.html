@@ -16,26 +16,36 @@
         <li><a href="#">YUAN UP</a></li>
         <li><a href="#">QIN</a></li>
         <li><a href="#">E2</a></li>
+        <li><a href="#contacts">Kontakty</a></li>
     </ul>
     <div class="buttons">
-        <button>Запросить предложение</button>
-        <button>Запись на тест-драйв</button>
+        <a href="#contact-form">Zapytaj o ofertę</a>
+        <a href="#contact-form" >Umów jazdę próbną</a>
     </div>
 </div>
  <header class="header">
      <div class="content">
          <div class="row">
-             <a class="logo" href="#">BYD logo</a>
+             <a class="logo" href="#">
+                 <img src="./src/images/A.png" alt="logo" width="40" height="40">
+             </a>
              <nav>
                  <ul>
-                     <li><a href="#">YUAN UP</a></li>
-                     <li><a href="#">QIN</a></li>
-                     <li><a href="#">E2</a></li>
+                     <li class="dropdown">
+                         <a href="#">Модели</a>
+                         <ul class="submenu">
+                             <li><a href="#">YUAN UP</a></li>
+                             <li><a href="#">QIN</a></li>
+                             <li><a href="#">E2</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#contacts">Kontakty</a></li>
                  </ul>
+
              </nav>
              <div class="buttons">
-                 <button>Запросить предложение</button>
-                 <button>Запись на тест-драйв</button>
+                 <a href="#contact-form">Zapytaj o ofertę</a>
+                 <a href="#contact-form" >Umów jazdę próbną</a>
                  <a class="phone" href="tel:+48452845105">
                      <img src="./src/images/phone.png" alt="phone" width="14" height="14">
                      <span>+48 452 845 105</span>
@@ -188,7 +198,21 @@
             </div>
         </div>
     </div>
-    <div class="contacts-block">
+    <div class="news-block">
+        <div class="content">
+            <div class="news-card">
+                <div class="img">
+                    <img src="./src/images/EURO_homebanner-1.jpg" alt="news-banner">
+                </div>
+                <div class="info">
+                    <h2> BYD | UEFA EURO 2024™ </h2>
+                    <p>Mistrzostwa UEFA EURO 2024™ odbędą się na dziesięciu światowej klasy stadionach w Niemczech, od 14 czerwca do 14 lipca 2024 roku. To prestiżowe wydarzenie umożliwi nam, jako oficjalnemu partnerowi UEFA EURO 2024™, prezentację naszych najnowszych osiągnięć w dziedzinie pojazdów...</p>
+                    <a href="#">Zobacz więcej</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts-block" id="contacts">
         <div class="content">
             <div class="info-block">
                 <h2>Contacts</h2>
@@ -211,11 +235,69 @@
             </div>
         </div>
     </div>
+    <div class="contact-form-block" id="contact-form">
+        <div class="content">
+            <h2>Zapytaj o ofertę</h2>
+            <form >
+                <div class="row">
+                    <input type="text" placeholder="Imię">
+                    <input type="text" placeholder="Nazwisko">
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Telefon">
+                </div>
+                <div class="row">
+                    <select>
+                        <option>Model1</option>
+                        <option>Model2</option>
+                        <option>Model3</option>
+                    </select>
+                </div>
+                <p class="text">Wysyłając wypełniony formularz podajesz nam swoje dane osobowe. Współadministratorami
+                    Twoich
+                    danych będą Spółki Grupy Plichta (kliknij, żeby zobaczyć).
+                    Dane będą przetwarzane w celu podjęcia działań w związku z przesłanym zgłoszeniem
+                    oraz wysłania informacji handlowych na temat naszych produktów i usług.
+                    Więcej informacji znajdziesz w naszej <a href="#">Polityce prywatności.</a> </p>
+                <div class="checkbox-inner">
+                    <p class="chapter">Wymagana zgoda <span>*</span></p>
+                    <label for="">
+                        <input type="checkbox">
+                        Zapoznałem się z <a href="#">Polityką prywatności </a> Grupy Plichta
+                    </label>
+
+                </div>
+                <div class="checkbox-inner">
+                    <p class="chapter">Opcjonalne zgody</span></p>
+                    <label for="">
+                        <input type="checkbox">
+                        Zaznacz wszystkie
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        Zgoda na kontakt SMS/MMS. Zaznaczając okienko... rozwiń
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        Zgoda na kontakt telefoniczny. Zaznaczając okienko... rozwiń
+                    </label>
+                    <label for="">
+                        <input type="checkbox">
+                        Zgoda na kontakt mailowy. Zaznaczając okienko... rozwiń
+                    </label>
+                </div>
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+    </div>
 </main>
 <footer class="footer">
     <div class="content">
         <div class="row">
-            <a class="logo" href="#">BYD logo</a>
+            <a class="logo" href="#">
+                <img src="./src/images/A.png" alt="logo" width="40" height="40">
+            </a>
             <div class="chapter">
                 <span>Location</span>
                 <p class="location">Łopuszańska 24C, 02-220 Warszawa</p>

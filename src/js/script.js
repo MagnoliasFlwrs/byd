@@ -68,18 +68,11 @@ window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > 5) {
-        if (scrollTop > lastScrollTop) {
-
-            header.classList.add('scrollable');
-        } else {
-
-            header.classList.remove('scrollable');
-        }
+        header.classList.add('scrollable');
     }
-    // else {
-    //
-    //     header.style.transform = 'translateY(0)';
-    // }
+    else {
+        header.classList.remove('scrollable');
+    }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
