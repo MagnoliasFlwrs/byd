@@ -100,6 +100,9 @@ body {
 .header.scrollable {
   background: #252728;
 }
+.header.header-pages {
+  background: #252728;
+}
 @media (max-width: 1024px) {
   .header .content {
     padding: 0;
@@ -811,6 +814,113 @@ body {
   .footer .content .copy {
     padding-left: 0;
   }
+}
+
+.model-page-hero {
+  height: 90vh;
+  background-image: url(/src/images/byd-seal-podglad-scaled.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.model-page-hero .banner-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.model-page-hero .banner-info .title-row {
+  padding-bottom: 40px;
+}
+.model-page-hero .banner-info .title-row h1 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+.model-page-hero .banner-info .params {
+  padding: 16px 0;
+  position: relative;
+}
+.model-page-hero .banner-info .params::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(180deg, rgba(12, 113, 195, 0.2) 0%, rgba(12, 113, 195, 0.2) 100%), url(/src/images/byd-seal-podglad-scaled.jpg);
+  background-color: rgba(255, 255, 255, 0);
+  filter: blur(10px);
+  z-index: 1;
+}
+.model-page-hero .banner-info .params .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.model-page-hero .banner-info .params .content .params-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.model-page-hero .banner-info .params .content .params-card p {
+  font-weight: 600;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .model-page-hero .banner-info .params .content .params-card p {
+    font-size: 25px;
+  }
+}
+.model-page-hero .banner-info .params .content .params-card span {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.model-page-hero .banner-info .buttons-row {
+  background: #464b4d;
+  padding: 16px 0;
+}
+.model-page-hero .banner-info .buttons-row .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.model-page-hero .banner-info .buttons-row p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.model-page-hero .banner-info .buttons-row span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.model-page-hero .banner-info .buttons-row .links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.model-page-hero .banner-info .buttons-row .links a {
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 8px 20px;
+}
+.model-page-hero .banner-info .buttons-row .links a:hover {
+  color: #000;
+  background: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
